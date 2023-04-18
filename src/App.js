@@ -18,14 +18,19 @@ export default function App() {
     const finalTree = deleteNode(explorerData, folderId);
     setExplorerData(finalTree);
   };
-
   return (
-    <div className="App">
-      <Folder
-        handleInsertNode={handleInsertNode}
-        handleDeleteNode={handleDeleteNode}
-        explorer={explorerData}
-      />
-    </div>
+    <>
+      <h1 style={{ textAlign: "center", fontFamily: "Outfit,sans-serif" }}>
+        CosmoCloud Internship Task[1]
+      </h1>
+
+      <div className="App">
+        <Folder
+          handleInsertNode={handleInsertNode}
+          handleDeleteNode={handleDeleteNode}
+          explorer={explorerData}
+        />
+      </div>
+    </>
   );
 }

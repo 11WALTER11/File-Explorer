@@ -1,6 +1,5 @@
 const explorer = {
   id: "1",
-  name: "",
   isFolder: true,
   items: [
     {
@@ -10,44 +9,46 @@ const explorer = {
       items: [
         {
           id: "3",
-          name: "name",
+          name: "Name",
           isFolder: true,
           items: [
             {
               id: "4",
-              name: "firstname",
+              name: "firstName",
               isFolder: true,
-              items: []
+              items: [],
             },
             {
               id: "5",
-              name: "lastname",
+              name: "lastName",
               isFolder: true,
-              items: []
-            }
-          ]
+              items: [],
+            },
+          ],
         },
+
         {
           id: "6",
           name: "age",
           isFolder: true,
-          items: []
-        }
-      ]
+          items: [],
+        },
+      ],
     },
+
     {
       id: "7",
       name: "order",
       isFolder: true,
-      items: []
+      items: [],
     },
     {
       id: "8",
       name: "class",
       isFolder: true,
-      items: []
-    }
-  ]
+      items: [],
+    },
+  ],
 };
 
 export default explorer;
