@@ -31,7 +31,15 @@ const useTraverseTree = () => {
     return { ...tree, items };
   };
 
-  const renameNode = () => {};
+  const renameNode = function (tree, nodeId, newName) {
+    if (tree.id === nodeId) {
+      return { ...tree, name: newName };
+    }
+  
+    const items = tree.items.map((item) => renameNode(item, nodeId, newName));
+  
+    return { ...tree, items };
+  };
 
   return { insertNode, deleteNode, renameNode };
 };
